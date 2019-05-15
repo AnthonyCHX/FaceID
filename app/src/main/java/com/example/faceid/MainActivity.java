@@ -8,11 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button inscriptionBtn;
+    private Button verificationBtn;
+    private Button authentificationBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inscriptionBtn=findViewById(R.id.buttonInsciption);
+        verificationBtn=findViewById(R.id.buttonVerification);
+        authentificationBtn=findViewById(R.id.buttonAuthentification);
 
         inscriptionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,6 +26,27 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
             }
         });
+
+        verificationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent verificationacivity = new Intent(MainActivity.this, Verification.class);
+                startActivity(verificationacivity);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+
+        authentificationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent authentificationacivity = new Intent(MainActivity.this, Authentification.class);
+                startActivity(authentificationacivity);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+
     }
 
 
