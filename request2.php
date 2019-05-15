@@ -1,9 +1,9 @@
 <?php
 
 $host='localhost';
-$username='id5068369_root';
-$pwd='root123';
-$db="id5068369_logintable";
+$username=not specified;
+$pwd=not specified;
+$db=not specified;
 
 $con=mysqli_connect($host,$username,$pwd,$db) or die('Unable to connect');
 
