@@ -60,9 +60,9 @@ function post($url, $postVars = array()){
     return $result;
 }
 
-$result = post('https://api-us.faceplusplus.com/facepp/v3/compare', array(
-    'api_key' => '0LQ_5a-JE8gvZTbqoD8EB9j_uNBHRgTJ',
-    'api_secret' => 'PrxR1alwxHG_jQa-Tu7TNVgPt_BWeDZC',
+$result = post('API_URL', array(
+    'api_key' => 'XXX',
+    'api_secret' => 'XXX',
     'image_url1' => $Image,
     'image_url2' => $adresseimage
 ));
