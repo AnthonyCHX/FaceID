@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
            
 try
 {
-$bdd = new PDO('mysql:host=localhost;dbname=id5068369_logintable;charset=utf8', 'id5068369_root', 'root123',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+$bdd = new PDO('mysql:host=localhost;dbname=not specified;charset=utf8', not specified, not specified,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch(Exception $e)
 {
